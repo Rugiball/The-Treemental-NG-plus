@@ -15,7 +15,7 @@
     <script src="js/canvas.js"></script>
     <script src="js/v.js"></script>
 
-    <title>The Treemental</title>
+    <title>The Treemental but not with GIANT timewalls</title>
     
 </head>
 <body onload="loadGame()">
@@ -62,6 +62,7 @@
             <button onclick="importy()">Import</button><br><br>
             The Treemental - v0.3.1<br>
             Made by MrRedShark77
+            Modded by Rugiball
         </div><div v-if='player.tabs[0] == 2'>
             You have <h2>{{ format(player.prestige.points, 0) }}</h2> Prestige points.<br><br>
             <button class="prestige_button" v-bind:class="{closed: !FUNCTIONS.prestige.can()}" onclick="FUNCTIONS.prestige.reset()"><span v-if="FUNCTIONS.prestige.can()">Gain <b>{{ format(FUNCTIONS.prestige.points(),0) }}</b> Prestige points.</span><span v-if="!FUNCTIONS.prestige.can()">Reach <b>1e10</b> points to prestige.</span></button><br>
